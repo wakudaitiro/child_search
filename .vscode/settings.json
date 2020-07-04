@@ -1,0 +1,12 @@
+{
+  "ruby.format": "rubocop",
+  "vscode-erb-beautify.tab": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "files.associations": {
+    "*.erb": "erb"
+  },
+  "vscode-erb-beautify.tabStops": 1,
+  "editor.tabSize": 2
+}

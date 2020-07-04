@@ -1,0 +1,14 @@
+<% if @items.present? %>
+	<% @items.each do |item| %>
+		<div class="list">
+			<%= link_to image_tag(item["smallImageUrls"][0], style: "width: 70px;height: 100px;display: inline-block;"), item["itemUrl"] %>
+			<%= item["itemName"] %>
+		</div>
+	<% end %>
+<% end %>
+
+	$('#Remote').append("
+	<p><%= link_to image_tag(item["smallImageUrls"][0], style: "width: 70px;height: 100px;display: inline-block;"), item["itemUrl"] %>
+	<%= item["itemName"] %></p>
+")
+

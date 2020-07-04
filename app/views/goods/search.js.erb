@@ -1,0 +1,5 @@
+$('#Remote').empty();
+
+<% @items.first(3).each do |item| %>
+	$('#Remote').append("<p><%= "#{item['itemName']}" %></p>")
+<% end %>

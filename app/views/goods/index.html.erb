@@ -1,0 +1,13 @@
+<h1>Rakuserach</h1>
+<div class='content'>
+	<div id="search-box">
+		<%= form_tag(goods_path, method: :get, remote: true) do %>
+			<%= label_tag :keyword, 'キーワード検索'%>
+			<%= text_field_tag "keyword", params[:keyword], placeholder: "キーワードを打ち込んでください", style: "width: 200px;"%>
+			<%= submit_tag('Ajaxで検索結果を表示') %>
+		<% end %>
+	</div>
+	<h2>検索結果</h2>
+	<div id="Remote"></div>
+	<div id="content-image"></div>
+</div>
